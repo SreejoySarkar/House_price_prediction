@@ -48,6 +48,43 @@ The model is implemented using **Linear Regression** from Scikit-learn, with **S
 
 ---
 
+## 📂 Dataset
+
+This project uses the **House Price Regression Dataset** available on Kaggle:
+
+**Kaggle Dataset:** [House Price Regression Dataset](https://www.kaggle.com/datasets/prokshitha/home-value-insights)
+
+The dataset is used as the source of housing records for training and evaluating the regression model.
+
+### Dataset Usage
+
+Download the dataset from Kaggle and place the required CSV file in the project's `data/` directory:
+
+```text
+House_price_prediction/
+└── data/
+    └── house_price.csv
+```
+
+The training script expects the dataset to contain the following model-relevant columns:
+
+| Column | Role | Description |
+|---|---|---|
+| `area` | Feature | House area in square feet |
+| `rooms` | Feature | Number of rooms |
+| `price` | Target | House price to be predicted |
+
+> **Dataset source:** Kaggle — Prokshitha, *House Price Regression Dataset*.
+
+### Download the Dataset
+
+1. Open the [Kaggle dataset page](https://www.kaggle.com/datasets/prokshitha/home-value-insights).
+2. Download the dataset.
+3. Extract the CSV file.
+4. Rename it to `house_price.csv` if necessary.
+5. Place it inside the project's `data/` folder.
+6. Run the training script.
+
 ## 🧠 Machine Learning Workflow
 
 ### 1. Load the dataset
